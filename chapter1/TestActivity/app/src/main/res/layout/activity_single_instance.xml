@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".life.BasicActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="this is single_instance" />
+
+    <Button
+        android:id="@+id/standard_stand_mode"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="start StandardActivity" />
+
+    <Button
+        android:id="@+id/standard_singletop_mode"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="start SingleTopdActivity" />
+
+    <Button
+        android:id="@+id/standard_singletask_mode"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="start singletask_Activity" />
+
+    <Button
+        android:id="@+id/standard_single_instance_mode"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="start singleinstance_Activity" />
+</LinearLayout>
