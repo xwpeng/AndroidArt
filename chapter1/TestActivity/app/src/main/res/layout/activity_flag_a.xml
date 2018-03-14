@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/flag_launch_self"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动自己"
+        />
+
+    <Button
+        android:id="@+id/flag_cleartop_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试standard+clearTop" />
+
+    <Button
+        android:id="@+id/flag_exclude_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试excludeFromRecents" />
+
+</LinearLayout>

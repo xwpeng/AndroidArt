@@ -7,31 +7,30 @@
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!-- android:excludeFromRecents="true"-->
+
+        <!-- android:excludeFromRecents="true" -->
         <activity
             android:name=".MainActivity"
             android:label="TestActivity"
+            android:excludeFromRecents="true"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".life.AaActivity"
-            android:label="AaActivity"
             android:configChanges="orientation|screenSize"
-            />
-
+            android:label="AaActivity" />
         <activity
             android:name=".life.BbActivity"
             android:label="BbActivity"
             android:theme="@style/BbActivityTheme" />
-
         <activity
             android:name=".life.CcActivity"
             android:label="CcActivity" />
-
         <activity
             android:name=".startmode.StandardActivity"
             android:label="StartActivity" />
@@ -43,33 +42,35 @@
             android:name=".startmode.SingleTaskActivity"
             android:label="SingleTaskActivity"
             android:launchMode="singleTask"
-            android:taskAffinity="xwpeng.com"
-            />
+            android:taskAffinity="xwpeng.com" />
         <activity
             android:name=".startmode.SingleInstanceActivity"
             android:label="SingleInstanceActivity"
             android:launchMode="singleInstance" />
-
         <activity
             android:name=".intentfilter.AimActivity"
             android:label="AimActivity">
             <intent-filter>
                 <action android:name="com.xwpeng.action2" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-                <!--                <data android:mimeType="text/plain"/>-->
+                <!-- <data android:mimeType="text/plain"/> -->
             </intent-filter>
             <intent-filter>
                 <action android:name="com.xwpeng.action1" />
 
-                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+                <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <!--  <data android:scheme="xwpeng" />
-                  <data android:scheme="xwpeng2" />-->
-                <!-- <data android:mimeType="image/png" android:scheme="file"/>-->
+                <!--
+                  <data android:scheme="xwpeng" />
+                  <data android:scheme="xwpeng2" />
+                -->
+                <!-- <data android:mimeType="image/png" android:scheme="file"/> -->
                 <data android:mimeType="image/png" />
             </intent-filter>
         </activity>
+        <activity android:name=".flags.FlagActivity"></activity>
     </application>
 
 </manifest>

@@ -23,4 +23,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="测试启动模式匹配规则" />
+
+    <Button
+        android:id="@+id/main_flag_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试flag" />
+
 </LinearLayout>

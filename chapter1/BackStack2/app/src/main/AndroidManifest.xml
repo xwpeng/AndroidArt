@@ -15,18 +15,20 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-                <action android:name="android.intent.action.C"/>
-                 <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.C" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".DActivity"
-            android:launchMode="singleTask">
+            android:allowTaskReparenting="true"
+            >
             <intent-filter>
-                <action android:name="android.intent.action.D"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.D" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <!--android:taskAffinity="xwpeng.com"-->
     </application>
 
 </manifest>

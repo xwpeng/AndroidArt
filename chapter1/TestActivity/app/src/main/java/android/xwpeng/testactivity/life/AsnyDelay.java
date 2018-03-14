@@ -1,5 +1,6 @@
 package android.xwpeng.testactivity.life;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -27,6 +28,7 @@ public class AsnyDelay {
         mActivity = weakReference.get();
     }
 
+    @SuppressLint("StaticFieldLeak")
     public void startActivity() {
         new AsyncTask<Object, Object, Object>() {
             @Override
@@ -43,6 +45,7 @@ public class AsnyDelay {
         }.execute();
     }
 
+    @SuppressLint("StaticFieldLeak")
     public void createView() {
         new AsyncTask<Object, Object, Object>() {
             @Override
@@ -59,6 +62,7 @@ public class AsnyDelay {
         }.execute();
     }
 
+    @SuppressLint("StaticFieldLeak")
     public void inflat(final ViewGroup viewGroup) {
         new AsyncTask<Object, Object, Object>() {
             @Override
@@ -75,6 +79,7 @@ public class AsnyDelay {
         }.execute();
     }
 
+    @SuppressLint("StaticFieldLeak")
     public void showdialog() {
         new AsyncTask<Object, Object, Object>() {
             @Override

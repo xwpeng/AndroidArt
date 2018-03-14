@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.xwpeng.testactivity.flags.FlagActivity;
 import android.xwpeng.testactivity.life.AaActivity;
 import android.xwpeng.testactivity.startmode.StandardActivity;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.main_life_resetup_context_button).setOnClickListener(this);
         findViewById(R.id.main_intentfilter_button).setOnClickListener(this);
         findViewById(R.id.main_startmode_button).setOnClickListener(this);
+        findViewById(R.id.main_flag_button).setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.main_startmode_button:
                 startActivity(new Intent(MainActivity.this, StandardActivity.class));
+                break;
+            case R.id.main_flag_button:
+                startActivity(new Intent(MainActivity.this, FlagActivity.class));
                 break;
         }
 
